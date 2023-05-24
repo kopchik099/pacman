@@ -8,7 +8,7 @@ main_socket.listen(5)
 print('сокет создан')
 players = []
 while True:
-    try: 
+    try:
         new_socket, addr = main_socket.accept()
         print(f'подключился {addr}')
         main_socket.setblocking(False)
@@ -28,5 +28,7 @@ while True:
             players.remove(sock)
             sock.close()
             print('сокет закрыт')
-    time.sleep(1)
+        
+    
+    time.sleep(0.01)
 
