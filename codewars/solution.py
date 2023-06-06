@@ -4,5 +4,5 @@ def filter_list(l):
     for i in l:
         if type(i) != str:
             sp.append(i)
-        return sp
+    return sp
             
